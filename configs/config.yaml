@@ -1,0 +1,27 @@
+# Main configuration file
+defaults:
+  - data: default
+  - model: setfit
+  - training: fewshot
+  - _self_
+
+# Project settings
+project_name: food_safety_detection
+seed: 42
+
+# Paths
+paths:
+  data_dir: ${oc.env:PWD}/data
+  raw_data_dir: ${paths.data_dir}/event_detection_data
+  bronze_dir: ${paths.data_dir}/bronze
+  silver_dir: ${paths.data_dir}/silver
+  gold_dir: ${paths.data_dir}/gold
+  output_dir: ${oc.env:PWD}/outputs
+  log_dir: ${paths.output_dir}/logs
+  models_dir: ${paths.output_dir}/models
+  results_dir: ${paths.output_dir}/results
+
+# Logging
+logging:
+  level: INFO
+  log_to_file: true

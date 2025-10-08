@@ -1,0 +1,20 @@
+# SetFit Few-Shot Training Configuration
+
+# Batch size for contrastive learning
+batch_size: 16
+
+# Number of text pairs to generate per example
+# Higher = more training data, but slower
+num_iterations: 20
+
+# Number of epochs for classification head
+num_epochs: 1
+
+# Warmup proportion for learning rate scheduler
+warmup_proportion: 0.1
+
+# Learning rate
+learning_rate: 2.0e-5
+
+# Stratified sampling
+boost_minority: true  # Give minority classes more samples

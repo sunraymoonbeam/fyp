@@ -1,0 +1,18 @@
+# SetFit Model Configuration
+
+# Model selection (sentence transformers)
+# Options:
+# - sentence-transformers/paraphrase-mpnet-base-v2 (best quality)
+# - sentence-transformers/all-MiniLM-L6-v2 (faster, smaller)
+# - BAAI/bge-small-en-v1.5 (good for retrieval)
+name: sentence-transformers/paraphrase-mpnet-base-v2
+
+# Text column to use from preprocessed data
+# Options: text, text_cleaned, text_ranked (recommended)
+text_column: text_ranked
+
+# Few-shot configurations to test
+k_shots: [8, 16, 32]
+
+# Multi-target strategy (not needed for single-label)
+multi_target_strategy: null
