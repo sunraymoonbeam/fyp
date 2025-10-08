@@ -219,10 +219,10 @@ data/
 
 # ML/AI specific
 checkpoints/
-outputs/
+outputs/models/
+outputs/2025-*/
 mlruns/
 wandb/
-notebooks/
 
 # Documentation - markdown files
 *.md
